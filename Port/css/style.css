@@ -1,0 +1,176 @@
+@keyframes glow {
+    from {
+        text-shadow: 0 0 20px #ffffff;
+    }
+    to {
+        text-shadow: 0 0 30px #ffffff, 0 0 10px #c9c9c9;
+    }
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, -1px, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(1px, 1px, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-2px, -2px, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(2px, 2px, 0);
+    }
+  }
+
+.backgorund {
+    position: relative;
+    background-color: #3A3A3A;
+    height: 1920px;
+}
+
+.backgorund img {
+    position: absolute;
+    animation: shake 15s cubic-bezier(.36,.07,.19,.97) both infinite alternate;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+}
+#img1{
+    top: 0;
+    left: 0;
+}
+
+#img2{
+    top: 0;
+    left: 500px;
+}
+
+#img3{
+    top: 0;
+    right: 400px;
+}
+
+#img4{
+    top: 0;
+    right: 0;
+}
+
+.header-top ul li {
+    display: flex;
+
+}
+
+.header-top ul li span {
+    margin: 124px auto 20px;
+    color: #FFF;
+    opacity: 60%;
+    font-weight: 700px;
+    font-size: 36px;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.header-top ul li h3{
+    margin: 0 auto;
+    color: #FFF;
+    font-weight: 700px;
+    font-size: 36px;
+}
+
+li {
+    list-style-type: none;
+}
+
+#dev {
+    margin: 20px auto 0;
+}
+
+
+.contato {
+    margin-top: 200px;
+    border-top: 20px solid #000;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    top: 40px;
+    padding: 30px 30px;
+
+    background: #e8e8f3;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15), -7px -7px 20px rgba(255, 255, 255, 1), inset 0px 0px 4px rgba(255, 255, 255, 0.2), inset 7px 7px 15px rgba(55, 84, 170, 0), inset -7px -7px 20px rgba(255, 255, 255, 0), 0px 0px 4px rgba(255, 255, 255, 0);
+}
+.menu::before, .menu::after {
+    content: "";
+    background: #c3c2c7;
+    border-radius: 5px;
+    width: 30px;
+    height: 5px;
+    position: absolute;
+    transition: 0.2s ease;
+    z-index: 1;
+}
+.menu::before {
+    transform: rotate(0deg);
+}
+.menu::after {
+    transform: rotate(-90deg);
+}
+.menu.open {
+    opacity: 0.9;
+}
+.menu.open::before {
+    transform: rotate(45deg);
+}
+.menu.open::after {
+    transform: rotate(-45deg);
+}
+.menu.open .button {
+    opacity: 1;
+    pointer-events: auto;
+}
+.menu.open .button:first-of-type {
+    bottom: 40px;
+    right: 70px;
+    background: url("https://bassets.github.io/cam.svg") no-repeat 50%/50% #e8e8f3;
+}
+.menu.open .button:nth-of-type(2) {
+    bottom: 80px;
+    background: url("https://bassets.github.io/img.svg") no-repeat 50%/ 50% #e8e8f3;
+    transition-delay: 0.05s;
+}
+.menu.open .button:last-of-type {
+    bottom: 40px;
+    right: -70px;
+    background: url("https://bassets.github.io/music.svg") no-repeat 50% 45%/50% 45% #e8e8f3;
+    transition-delay: 0.1s;
+}
+.button {
+    padding: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #e8e8f3;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: inherit;
+    transition: 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28), 0.2s ease opacity, 0.2s cubic-bezier(0.08, 0.82, 0.17, 1) transform;
+}
+.button:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
