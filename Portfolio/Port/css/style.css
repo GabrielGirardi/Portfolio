@@ -1,0 +1,388 @@
+@-webkit-keyframes floatUp{
+    0%{top: 100vh; opacity: 0;}
+    25%{opacity: 1;}
+    50%{top: 0vh; opacity: .8;}
+    75%{opacity: 1;}
+    100%{top: -100vh; opacity: 0;}
+  }
+  @-moz-keyframes floatUp{
+    0%{top: 100vh; opacity: 0;}
+    25%{opacity: 1;}
+    50%{top: 0vh; opacity: .8;}
+    75%{opacity: 1;}
+    100%{top: -100vh; opacity: 0;}
+  }
+  @-o-keyframes floatUp{
+    0%{top: 100vh; opacity: 0;}
+    25%{opacity: 1;}
+    50%{top: 0vh; opacity: .8;}
+    75%{opacity: 1;}
+    100%{top: -100vh; opacity: 0;}
+  }
+  @keyframes floatUp{
+    0%{top: 100vh; opacity: 0;}
+    25%{opacity: 1;}
+    50%{top: 0vh; opacity: .8;}
+    75%{opacity: 1;}
+    100%{top: -100vh; opacity: 0;}
+  }
+  
+  .header{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: white;
+    font-size: 2em;
+  }
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 20px #ffffff;
+    }
+    to {
+        text-shadow: 0 0 30px #ffffff, 0 0 10px #c9c9c9;
+    }
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, -1px, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(1px, 1px, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, -2px, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 2px, 0);
+    }
+  }
+
+.backgorund {
+    position: relative;
+    background-color: #232323;
+    height: 1920px;
+}
+
+.light {
+    position: absolute;
+    width: 0px;
+    opacity: .75;
+    background-color: #252525;
+    box-shadow: #3f3f3f 0px 0px 20px 2px;
+    opacity: 0;
+    top: 100vh;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+.x1{
+  -webkit-animation: floatUp 4s infinite linear;
+  -moz-animation: floatUp 4s infinite linear;
+  -o-animation: floatUp 4s infinite linear;
+  animation: floatUp 4s infinite linear;
+   -webkit-transform: scale(1.0);
+   -moz-transform: scale(1.0);
+   -o-transform: scale(1.0);
+  transform: scale(1.0);
+}
+
+.x2{
+  -webkit-animation: floatUp 7s infinite linear;
+  -moz-animation: floatUp 7s infinite linear;
+  -o-animation: floatUp 7s infinite linear;
+  animation: floatUp 7s infinite linear;
+  -webkit-transform: scale(1.6);
+  -moz-transform: scale(1.6);
+  -o-transform: scale(1.6);
+  transform: scale(1.6);
+  left: 15%;
+}
+
+.x3{
+  -webkit-animation: floatUp 2.5s infinite linear;
+  -moz-animation: floatUp 2.5s infinite linear;
+  -o-animation: floatUp 2.5s infinite linear;
+  animation: floatUp 2.5s infinite linear;
+  -webkit-transform: scale(.5);
+  -moz-transform: scale(.5);
+  -o-transform: scale(.5);
+  transform: scale(.5);
+  left: -15%;
+}
+
+.x4{
+  -webkit-animation: floatUp 4.5s infinite linear;
+  -moz-animation: floatUp 4.5s infinite linear;
+  -o-animation: floatUp 4.5s infinite linear;
+  animation: floatUp 4.5s infinite linear;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  left: -34%;
+}
+
+.x5{
+  -webkit-animation: floatUp 8s infinite linear;
+  -moz-animation: floatUp 8s infinite linear;
+  -o-animation: floatUp 8s infinite linear;
+  animation: floatUp 8s infinite linear;
+  -webkit-transform: scale(2.2);
+  -moz-transform: scale(2.2);
+  -o-transform: scale(2.2);
+  transform: scale(2.2);
+  left: -57%;
+}
+
+.x6{
+  -webkit-animation: floatUp 3s infinite linear;
+  -moz-animation: floatUp 3s infinite linear;
+  -o-animation: floatUp 3s infinite linear;
+  animation: floatUp 3s infinite linear;
+  -webkit-transform: scale(.8);
+  -moz-transform: scale(.8);
+  -o-transform: scale(.8);
+  transform: scale(.8);
+  left: -81%;
+}
+
+.x7{
+  -webkit-animation: floatUp 5.3s infinite linear;
+  -moz-animation: floatUp 5.3s infinite linear;
+  -o-animation: floatUp 5.3s infinite linear;
+  animation: floatUp 5.3s infinite linear;
+  -webkit-transform: scale(3.2);
+  -moz-transform: scale(3.2);
+  -o-transform: scale(3.2);
+  transform: scale(3.2);
+  left: 37%;
+}
+
+.x8{
+  -webkit-animation: floatUp 4.7s infinite linear;
+  -moz-animation: floatUp 4.7s infinite linear;
+  -o-animation: floatUp 4.7s infinite linear;
+  animation: floatUp 4.7s infinite linear;
+  -webkit-transform: scale(1.7);
+  -moz-transform: scale(1.7);
+  -o-transform: scale(1.7);
+  transform: scale(1.7);
+  left: 62%;
+}
+
+.x9{
+  -webkit-animation: floatUp 4.1s infinite linear;
+  -moz-animation: floatUp 4.1s infinite linear;
+  -o-animation: floatUp 4.1s infinite linear;
+  animation: floatUp 4.1s infinite linear;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+  left: 85%;
+}
+
+.backgorund img {
+    position: absolute;
+    animation: shake 15s cubic-bezier(.36,.07,.19,.97) both infinite alternate;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    
+}
+#img1{
+    top: 0;
+    left: 0;
+    opacity: 40%;
+}
+
+#img2{
+    top: 0;
+    left: 500px;
+    opacity: 50%;
+}
+
+#img3{
+    top: 0;
+    right: 400px;
+    opacity: 30%;
+}
+
+#img4{
+    top: 0;
+    right: 0;
+    opacity: 55%;
+}
+
+.header-top ul li {
+    display: flex;
+
+}
+
+@media only screen and (min-width: 1000px){
+    .header-top ul li span {
+        margin: 124px auto 20px;
+        color: #FFF;
+        opacity: 60%;
+        font-weight: 700px;
+        font-size: 36px;
+        animation: glow 1s ease-in-out infinite alternate;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .header-top ul li span {
+        margin: 124px auto 20px;
+        color: #FFF;
+        opacity: 60%;
+        font-weight: 700px;
+        font-size: 36px;
+        animation: glow 1s ease-in-out infinite alternate;
+    }
+}
+
+.header-top ul li h3{
+    margin: 0 auto;
+    color: #FFF;
+    font-weight: 700px;
+    font-size: 36px;
+}
+
+li {
+    list-style-type: none;
+}
+
+#dev {
+    margin: 20px auto 0;
+}
+
+
+.contato {
+    margin-top: 200px;
+    margin: 200px auto;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    width: 5px;
+    height: 5px;
+    top: -44px;
+    padding: 30px 30px;
+    background: #e8e8f3;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15), 7px 7px 20px rgba(255, 255, 255, 1), inset 0px 0px 4px rgba(255, 255, 255, 0.2);
+
+}
+
+@media only screen and (max-width: 1000px){
+    .menu::before, .menu::after {
+        content: "";
+        left: 18px;
+        background: #494949;
+        border-radius: 5px;
+        width: 30px;
+        height: 5px;
+        position: absolute;
+        transition: 0.2s ease;
+        z-index: 1;
+    }
+}
+.menu::before {
+    transform: rotate(0deg);
+}
+.menu::after {
+    transform: rotate(-90deg);
+}
+.menu.open {
+    opacity: 0.9;
+}
+.menu.open::before {
+    transform: rotate(45deg);
+}
+.menu.open::after {
+    transform: rotate(-45deg);
+}
+.menu.open .button {
+    opacity: 1;
+    pointer-events: auto;
+}
+.menu.open .button:first-of-type {
+    bottom: 40px;
+    right: 70px;
+    background: url("https://bassets.github.io/instagram.svg") no-repeat 50%/50% #e8e8f3;
+}
+.menu.open .button:nth-of-type(2) {
+    bottom: 80px;
+    background: url("https://bassets.github.io/info.svg") no-repeat 50%/ 50% #e8e8f3;
+    transition-delay: 0.05s;
+}
+.menu.open .button:last-of-type {
+    bottom: 40px;
+    right: -70px;
+    background: url("https://bassets.github.io/github.svg") no-repeat 50% 45%/50% 45% #e8e8f3;
+    transition-delay: 0.1s;
+}
+.button {
+    padding: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #e8e8f3;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: inherit;
+    transition: 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28), 0.2s ease opacity, 0.2s cubic-bezier(0.08, 0.82, 0.17, 1) transform;
+}
+.button:hover {
+    transform: scale(1.1);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 124px auto 20px;
+    color: #FFF;
+    font-size: 36px;
+}
+
+@media only screen and (min-width: 1000px){
+.descricao {
+    display: flex;
+    margin: 15px auto 15px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1240px;
+    color: #FFF;
+}
+}
+
+@media only screen and (max-width: 999px){
+    .descricao {
+        display: flex;
+        margin: 15px auto 15px;
+        justify-content: center;
+        align-items: center;
+        max-width: 90%;
+        color: #FFF;
+        font-size: 26px;
+    }
+    }
+
+
+
