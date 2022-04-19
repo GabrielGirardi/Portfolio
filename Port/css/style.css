@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @keyframes glitch {
@@ -115,33 +116,26 @@
 
 .background img {
     position: absolute;
-    animation: shake 10s cubic-bezier(.36,.07,.19,.97) both infinite alternate;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
     
 }
 #img1{
     top: 80px;
     left: 0;
-    opacity: 40%;
 }
 
 #img2{
     top: -80px;
     left: 500px;
-    opacity: 50%;
 }
 
 #img3{
     top:  60px;
     right: 400px;
-    opacity: 30%;
 }
 
 #img4{
     top: -60px;
     right: 15px;
-    opacity: 55%;
 }
 
 .header-top {
@@ -214,7 +208,7 @@ ul {
   margin-left: 40px;
 }
 
-@media only screen and (min-width: 1000px){
+/* @media only screen and (min-width: 1000px){
   .lettering div { 
     margin: 0 8px;
     background: #18191f;
@@ -232,19 +226,17 @@ ul {
       height: 80px;
       width: 80px;
   }
-}
-
-@media only screen and (max-width: 1000px){
+} */
   .lettering div { 
     margin: 0 8px;
-    color: #555;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 46px;
     cursor: pointer;
   }
-}
+
 
 input[type="checkbox"]:checked ~ div {
   box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.05),
@@ -277,7 +269,7 @@ li {
     height: 5px;
     top: -44px;
     padding: 30px 30px;
-    background: #FF0000;
+    background: #fff;
     border-radius: 100%;
     cursor: pointer;
 }
@@ -387,6 +379,9 @@ li {
   justify-content: center;
   margin: 25px auto;
   border-radius: 50%;
+  animation: shake 10s cubic-bezier(.36,.07,.19,.97) both infinite alternate;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
 }
 
 @media only screen and (min-width: 1000px){
