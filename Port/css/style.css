@@ -1,4 +1,5 @@
 * {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -69,33 +70,34 @@
 
 .backgorund img {
     position: absolute;
-    animation: shake 10s cubic-bezier(.36,.07,.19,.97) both infinite alternate;
+    /* animation: shake 10s cubic-bezier(.36,.07,.19,.97) both infinite alternate;
     transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
+    backface-visibility: hidden; */
     
 }
 #img1{
     top: 80px;
     left: 0;
-    opacity: 40%;
 }
 
 #img2{
     top: -80px;
     left: 500px;
-    opacity: 50%;
 }
 
 #img3{
     top:  60px;
     right: 400px;
-    opacity: 30%;
 }
 
 #img4{
     top: -60px;
+<<<<<<< Updated upstream
     right: -50px;
     opacity: 55%;
+=======
+    right: 15px;
+>>>>>>> Stashed changes
 }
 
 .header-top {
@@ -157,6 +159,7 @@ ul {
   margin-left: 40px;
 }
 
+<<<<<<< Updated upstream
 .lettering div { 
   margin: 0 8px;
   background: #18191f;
@@ -174,6 +177,38 @@ ul {
     height: 80px;
     width: 80px;
 }
+=======
+/*@media only screen and (min-width: 1000px){
+  .lettering div { 
+    margin: 0 8px;
+    background: #18191f;
+    color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 46px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: -1px -1px 4px rgba(255, 255, 255, 0.05),
+      4px 4px 6px rgba(0, 0, 0, 0.2),
+      inset -1px -1px 4px rgba(255, 255, 255, 0.05),
+      inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+      height: 80px;
+      width: 80px;
+  }
+} */
+
+  .lettering div { 
+    margin: 0 8px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 46px;
+    cursor: pointer;
+  }
+
+>>>>>>> Stashed changes
 
 input[type="checkbox"]:checked ~ div {
   box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.05),
@@ -206,7 +241,7 @@ li {
     height: 5px;
     top: -44px;
     padding: 30px 30px;
-    background: #FF0000;
+    background: #fff;
     border-radius: 100%;
     cursor: pointer;
 }
@@ -265,7 +300,7 @@ li {
 }
 .menu.open .button:nth-of-type(2) {
     bottom: 80px;
-    background: url("https://bassets.github.io/info.svg") no-repeat 50%/ 50% #000;
+    background: url("https://bassets.github.io/profile.svg") no-repeat 50%/ 50% #000;
     transition-delay: 0.05s;
 }
 .menu.open .button:last-of-type {
@@ -316,6 +351,9 @@ li {
   justify-content: center;
   margin: 25px auto;
   border-radius: 50%;
+  animation: shake 10s cubic-bezier(.36,.07,.19,.97) both infinite alternate;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden; 
 }
 
 @media only screen and (min-width: 1000px){
@@ -327,11 +365,11 @@ li {
     max-width: 1240px;
     color: #b2b2b2;
     font-size: 1.25rem;
-}
+  }
 }
 
 @media only screen and (max-width: 999px){
-    .descricao {
+      .descricao {
         display: flex;
         margin: 15px auto 15px;
         justify-content: center;
