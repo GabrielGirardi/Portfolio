@@ -435,6 +435,25 @@ li {
     position: relative;
 }
 
+@media only screen and (max-width: 999px){
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 410px auto 60px;
+        color: #FFF;
+        font-size: 44px;
+        background: linear-gradient(90deg, #1f1f1f, #fff, #ff0000);
+        letter-spacing: 5px;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 80%;
+        animation: shine  15s linear infinite;
+        position: relative;
+    }
+}
+
 #perfil {
     border: 1px solid #fff;
     position: relative;
@@ -456,7 +475,7 @@ li {
         align-items: center;
         max-width: 1240px;
         color: #b2b2b2;
-        font-size: 1.25rem;
+        font-size: 1.125rem;
     }
 }
 
@@ -468,7 +487,7 @@ li {
         align-items: center;
         max-width: 90%;
         color: #b2b2b2;
-        font-size: 22px;
+        font-size: 38px;
     }
   }
     
