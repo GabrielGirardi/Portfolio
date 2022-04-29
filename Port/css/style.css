@@ -256,8 +256,13 @@ li {
 
 
 .contato {
-    margin-top: 200px;
     margin: 200px auto;
+}
+
+@media only screen and (max-width: 1000px){
+    .contato {
+        margin: 400px auto;
+    }
 }
 
 .menu {
@@ -363,18 +368,18 @@ li {
 }
 
 .menu.open .button:first-of-type {
-    bottom: 40px;
-    right: 70px;
+    bottom: 80px;
+    right: 210px;
     background: url("https://bassets.github.io/instagram.svg") no-repeat 50%/50% #000;
 }
 .menu.open .button:nth-of-type(2) {
-    bottom: 80px;
+    bottom: 240px;
     background: url("https://bassets.github.io/profile.svg") no-repeat 50%/ 50% #000;
     transition-delay: 0.05s;
 }
 .menu.open .button:last-of-type {
-    bottom: 40px;
-    right: -70px;
+    bottom: 80px;
+    right: -210px;
     background: url("https://bassets.github.io/github.svg") no-repeat 50% 45%/50% 45% #000;
     transition-delay: 0.1s;
 }
