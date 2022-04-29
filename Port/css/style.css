@@ -114,6 +114,14 @@
         height: 2280px;
 }
 
+@media only screen and (max-width: 1000px) {
+    .background {
+        position: relative;
+        background-color: #232323;
+        height: 2600px;
+    }
+}
+
 .background img {
         position: absolute;
     
@@ -420,13 +428,9 @@ li {
     margin: 410px auto 60px;
     color: #FFF;
     font-size: 36px;
-    background: linear-gradient(90deg, #1f1f1f, #fff, #ff0000);
     letter-spacing: 5px;
-    -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-size: 80%;
-    animation: shine  15s linear infinite;
     position: relative;
 }
 
@@ -451,7 +455,7 @@ li {
         align-items: center;
         max-width: 1240px;
         color: #b2b2b2;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 }
 
