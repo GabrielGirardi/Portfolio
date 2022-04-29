@@ -98,29 +98,29 @@
   }
 
   .header{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 200;
-    color: white;
-    font-size: 2em;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 200;
+        color: white;
+        font-size: 2em;
   }
 
 .background {
-    position: relative;
-    background-color: #232323;
-    height: 2280px;
+        position: relative;
+        background-color: #232323;
+        height: 2280px;
 }
 
 .background img {
-    position: absolute;
+        position: absolute;
     
 }
 #img1{
-    top: 80px;
-    left: 0;
+        top: 80px;
+        left: 0;
 }
 
 #img2{
@@ -175,12 +175,12 @@
 
 @media only screen and (min-width: 1000px){
   input[type="checkbox"] {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 80px;
-    width: 80px;
-    z-index: 100;
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 80px;
+        width: 80px;
+        z-index: 100;
   }
 }
 
@@ -261,27 +261,43 @@ li {
 }
 
 .menu {
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin: 0 auto;
-    width: 5px;
-    height: 5px;
-    top: -44px;
-    padding: 30px 30px;
-    background: #fff;
-    border-radius: 100%;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 0 auto; 
+  width: 5px;
+  height: 5px;
+  top: -44px;
+  padding: 30px 30px;
+  background: #fff;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px){
+    .menu {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin: 0 auto; 
+        width: 5px;
+        height: 5px;
+        top: -44px;
+        padding: 80px 80px;
+        background: #fff;
+        border-radius: 100%;
+        cursor: pointer;
+  }
 }
 
 @media only screen and (max-width: 1000px){
     .menu::before, .menu::after {
         content: "";
-        left: 15px;
+        left: 40px;
         background: #000000;
         border-radius: 5px;
-        width: 30px;
-        height: 5px;
+        width: 80px;
+        height: 10px;
         position: absolute;
         transition: 0.2s ease;
         z-index: 1;
