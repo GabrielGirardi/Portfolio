@@ -114,6 +114,14 @@
         height: 2280px;
 }
 
+@media only screen and (max-width: 1000px) {
+    .background {
+        position: relative;
+        background-color: #232323;
+        height: 3000px;
+    }
+}
+
 .background img {
         position: absolute;
     
@@ -256,13 +264,8 @@ li {
 
 
 .contato {
+    margin-top: 200px;
     margin: 200px auto;
-}
-
-@media only screen and (max-width: 1000px){
-    .contato {
-        margin: 400px auto;
-    }
 }
 
 .menu {
@@ -367,21 +370,24 @@ li {
     }
 }
 
+/* Menus desktop*/
 .menu.open .button:first-of-type {
-    bottom: 80px;
-    right: 210px;
-    background: url("https://bassets.github.io/instagram.svg") no-repeat 50%/50% #000;
+	bottom: 40px;
+	right: 70px;
+	background: url("https://bassets.github.io/instagram.svg") no-repeat 50%/50% #000;
 }
+
 .menu.open .button:nth-of-type(2) {
-    bottom: 240px;
-    background: url("https://bassets.github.io/profile.svg") no-repeat 50%/ 50% #000;
-    transition-delay: 0.05s;
+	bottom: 80px;
+	background: url("https://bassets.github.io/profile.svg") no-repeat 50%/ 50% #000;
+	transition-delay: 0.05s;
 }
+
 .menu.open .button:last-of-type {
-    bottom: 80px;
-    right: -210px;
-    background: url("https://bassets.github.io/github.svg") no-repeat 50% 45%/50% 45% #000;
-    transition-delay: 0.1s;
+	bottom: 40px;
+	right: -70px;
+	background: url("https://bassets.github.io/github.svg") no-repeat 50% 45%/50% 45% #000;
+	transition-delay: 0.1s;
 }
 
 .button {
@@ -425,33 +431,10 @@ li {
     margin: 410px auto 60px;
     color: #FFF;
     font-size: 36px;
-    background: linear-gradient(90deg, #1f1f1f, #fff, #ff0000);
     letter-spacing: 5px;
-    -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-size: 80%;
-    animation: shine  15s linear infinite;
     position: relative;
-}
-
-@media only screen and (max-width: 999px){
-    .title {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 410px auto 60px;
-        color: #FFF;
-        font-size: 44px;
-        background: linear-gradient(90deg, #1f1f1f, #fff, #ff0000);
-        letter-spacing: 5px;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-size: 80%;
-        animation: shine  15s linear infinite;
-        position: relative;
-    }
 }
 
 #perfil {
@@ -475,7 +458,7 @@ li {
         align-items: center;
         max-width: 1240px;
         color: #b2b2b2;
-        font-size: 1.125rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -487,7 +470,7 @@ li {
         align-items: center;
         max-width: 90%;
         color: #b2b2b2;
-        font-size: 38px;
+        font-size: 22px;
     }
   }
     
