@@ -347,15 +347,15 @@ li {
 }
 @media only screen and (max-width: 1000px){
     .menu.open .button:first-of-type {
-        bottom: 152px;
-        right: 190px;
+        bottom: 80px;
+        right: 210px;
         background: url("https://bassets.github.io/instagram.svg") no-repeat 50%/50% #000;
     }   
 }
 
 @media only screen and (max-width: 1000px){
     .menu.open .button:nth-of-type(2) {
-        bottom: 210px;
+        bottom: 240px;
         background: url("https://bassets.github.io/profile.svg") no-repeat 50%/ 50% #000;
         transition-delay: 0.05s;
     }
@@ -363,8 +363,8 @@ li {
 
 @media only screen and (max-width: 1000px){
     .menu.open .button:last-of-type {
-        bottom: 152px;
-        right: -90px;
+        bottom: 80px;
+        right: -210px;
         background: url("https://bassets.github.io/github.svg") no-repeat 50% 45%/50% 45% #000;
         transition-delay: 0.1s;
     }
