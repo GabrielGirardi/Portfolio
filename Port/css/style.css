@@ -264,8 +264,7 @@ li {
 
 
 .contato {
-    margin-top: 200px;
-    margin: 200px auto;
+    margin: 400px auto;
 }
 
 .menu {
@@ -345,49 +344,58 @@ li {
     opacity: 1;
     pointer-events: auto;
 }
-@media only screen and (max-width: 1000px){
-    .menu.open .button:first-of-type {
-        bottom: 80px;
-        right: 210px;
-        background: url("https://bassets.github.io/instagram.svg") no-repeat 50%/50% #000;
-    }   
-}
 
-@media only screen and (max-width: 1000px){
-    .menu.open .button:nth-of-type(2) {
-        bottom: 240px;
-        background: url("https://bassets.github.io/profile.svg") no-repeat 50%/ 50% #000;
-        transition-delay: 0.05s;
-    }
-}
-
-@media only screen and (max-width: 1000px){
-    .menu.open .button:last-of-type {
-        bottom: 80px;
-        right: -210px;
-        background: url("https://bassets.github.io/github.svg") no-repeat 50% 45%/50% 45% #000;
-        transition-delay: 0.1s;
-    }
-}
 
 /* Menus desktop*/
-.menu.open .button:first-of-type {
-	bottom: 40px;
-	right: 70px;
-	background: url("https://bassets.github.io/instagram.svg") no-repeat 50%/50% #000;
+@media only screen and (min-width: 1000px){
+  .menu.open .button:first-of-type {
+    bottom: 40px;
+    right: 70px;
+    background: url("https://bassets.github.io/instagram.svg") no-repeat 50%/50% #000;
+  }
 }
 
-.menu.open .button:nth-of-type(2) {
-	bottom: 80px;
-	background: url("https://bassets.github.io/profile.svg") no-repeat 50%/ 50% #000;
-	transition-delay: 0.05s;
+@media only screen and (min-width: 1000px){
+  .menu.open .button:nth-of-type(2) {
+    bottom: 80px;
+    background: url("https://bassets.github.io/profile.svg") no-repeat 50%/ 50% #000;
+    transition-delay: 0.05s;
+  }
 }
 
-.menu.open .button:last-of-type {
-	bottom: 40px;
-	right: -70px;
-	background: url("https://bassets.github.io/github.svg") no-repeat 50% 45%/50% 45% #000;
-	transition-delay: 0.1s;
+@media only screen and (min-width: 1000px){
+  .menu.open .button:last-of-type {
+    bottom: 40px;
+    right: -70px;
+    background: url("https://bassets.github.io/github.svg") no-repeat 50% 45%/50% 45% #000;
+    transition-delay: 0.1s;
+  }
+}
+
+/* Menu mobile */
+@media only screen and (max-width: 1000px){
+  .menu.open .button:first-of-type {
+      bottom: 80px;
+      right: 210px;
+      background: url("https://bassets.github.io/instagram.svg") no-repeat 50%/50% #000;
+  }   
+}
+
+@media only screen and (max-width: 1000px){
+  .menu.open .button:nth-of-type(2) {
+      bottom: 240px;
+      background: url("https://bassets.github.io/profile.svg") no-repeat 50%/ 50% #000;
+      transition-delay: 0.05s;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  .menu.open .button:last-of-type {
+      bottom: 80px;
+      right: -210px;
+      background: url("https://bassets.github.io/github.svg") no-repeat 50% 45%/50% 45% #000;
+      transition-delay: 0.1s;
+  }
 }
 
 .button {
